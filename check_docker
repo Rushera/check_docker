@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import stat
+import sys
 import traceback
 from collections import deque, namedtuple
 from datetime import datetime, timezone
@@ -805,4 +806,4 @@ def perform_checks(raw_args):
 
 if __name__ == '__main__':
     perform_checks(argv[1:])
-    exit(rc)
+    sys.exit(rc)
